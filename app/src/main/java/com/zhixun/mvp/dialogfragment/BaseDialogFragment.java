@@ -43,6 +43,7 @@ public abstract class BaseDialogFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutResId(), null, false);
         final Window window = getDialog().getWindow();
+
         window.setBackgroundDrawable(new ColorDrawable(0x00000000));
         window.getDecorView().setPadding(0, 0, 0, 0);
         WindowManager.LayoutParams wlp = window.getAttributes();
